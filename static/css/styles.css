@@ -1,0 +1,103 @@
+.background{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/wallpaper.jpg");
+}
+
+.title{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-container{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    border-color: #006B38FF;
+    border-style: solid;
+    border-width: 3px;
+    padding: 2%;
+    margin: 2% 10% 2% 1%;
+    max-width: 70%;
+    color: rgb(255, 255, 255);
+    background-color: #101820;
+}
+
+.row{
+    margin: 1% 0% 1% 0%;
+    flex-direction: row;
+}
+
+.left{
+    text-align: left;
+}
+
+.rigth{
+    text-align: right;
+}
+
+.center{
+    text-align: center;
+}
+
+.menu-list{
+    font-size: 20px;
+    /* justify-content: space-around; */
+}
+
+a{
+    color: rgb(2, 168, 88);
+}
+
+a.hidden-link{
+    margin: 1%;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a.hidden-link:hover{
+    color: rgb(88, 243, 168);
+}
+
+button.button-pattern{
+    color: rgb(0, 0, 0);
+    min-height: 30px;
+    font-weight: bold;
+    border-radius: 6px;
+    border-color: rgb(3, 65, 35);
+    background-color: rgb(27, 202, 117);
+}
+
+button.button-pattern:focus{
+    outline: 0;
+}
+
+button.button-pattern:hover{
+    border-radius: 6px;
+    border-color: rgb(3, 65, 35);
+    background-color: rgb(72, 255, 167);
+}
+
+.header {
+    text-align: end;
+    margin-left: 76%;
+    max-width: 280px;
+    padding: 10px 16px;
+    background-color: #101820;
+    color: #f1f1f1;
+  }
+  
+  /* Page content */
+  /* .content {
+    padding: 16px;
+  } */
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 95%;
+    /* max-width: 280px; */
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
