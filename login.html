@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Digimon Fan Wiki - Login</title>
+        <link rel="stylesheet" href="static/css/styles.css">
+        <link rel="icon" href="static/img/digimon_logo.jpg">
+</head>
+<body id="login" class="background">
+    <div>
+        <div id="login" class="content-container">
+            <div class="row">
+                <h1 class="title">Login</h1>
+            </div>
+            <div class="center">
+                <div class="login-field">
+                    <label for="nome">Nome</label>
+                    <input id="login-nome" type="text" maxlength=36>
+                </div>
+                <div class="login-field">
+                    <label for="senha">Senha</label>
+                    <input id="login-senha" type="password" maxlength=36>
+                </div>
+                <a href="./cadastro.html" style="margin-bottom: 10px; font-size: 12px">Ainda não tenho conta</a>
+                <div style="margin-top: 10px;">
+                    <button class="button-pattern" onclick="entrar(document.getElementById('login-nome').value, document.getElementById('login-senha').value)">Entrar</button>
+                    <button class="button-pattern" onclick="cancelar()">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function entrar(nome,senha){
+        if(nome!="" && nome!=" " && senha!="" && senha!=" "){
+            alert(`Feche este Alert para continuar como ${nome}!`)
+            window.location.href="./index.html"
+            }
+    }
+    function cancelar(){
+        window.location.href="./index.html"
+    }
+</script>

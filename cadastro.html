@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Digimon Fan Wiki - Cadastro</title>
+        <link rel="stylesheet" href="static/css/styles.css">
+        <link rel="icon" href="static/img/digimon_logo.jpg">
+</head>
+<body class="background">
+    <div>
+        <div id="menu" class="content-container">
+            <div class="row">
+                <h1 class="title">Digimon Fan Wiki</h1>
+            </div>
+            <div class="row center menu-list">
+                <a href="./index.html" class="hidden-link">Início</a>
+                <a href="./index.html#digimon" class="hidden-link">Digimon</a>
+                <a href="./sobre.html" class="hidden-link">Sobre</a>
+                <a href="#cadastro" class="hidden-link">Cadastrar</a>
+                <a href="./login.html" class="hidden-link">Login</a>
+            </div>
+        </div>
+        <div class="content-container center">
+            <h2 id="cadastro">Formulário de Cadastro</h2>
+            <div>
+                <fieldset class="form">
+                    <div class="field">
+                        <label for="nome">Nome :</label>
+                        <input id="nome" type="text" placeholder="Agumon da Silva" maxlength=36>
+                    </div>
+                    <div class="field">
+                        <label for="senha">Senha :</label>
+                        <input id="senha" type="password" placeholder="**********" maxlength=36>
+                    </div>
+                    <div class="field">
+                        <label for="senha">Email :</label>
+                        <input id="senha" type="text" placeholder="Agumon@digimon.com">
+                    </div>
+                    <div class="field">
+                        <label for="idade">Idade :</label>
+                        <input id="idade" type="number" max="100" min="1">
+                    </div>
+                    <div class="field">
+                        <label for="apelido">Apelido :</label>
+                        <input id="apelido" type="text" placeholder="Agumon, o Mais Forte de Todos">
+                    </div>
+                    <div class="field">
+                        <label for="avatar">Digimon Avatar :</label>
+                        <select name="avatar" id="avatar">
+                            <option value="">Agumon</option>
+                            <option value="">Gabumon</option>
+                            <option value="">Piyomon</option>
+                            <option value="">Palmon</option>
+                            <option value="">Patamon</option>
+                            <option value="">Gomamon</option>
+                            <option value="">Tentomon</option>
+                            <option value="">Tailmon</option>
+                            <option value="">Veemon</option>
+                            <option value="">Wormmon</option>
+                            <option value="">Guilmon</option>
+                            <option value="">Terriermon</option>
+                            <option value="">Renamon</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="eu">Fale um pouco sobre você :</label>
+                        <textarea id="eu" type="text" placeholder="Sou Agumon e eu gosto de carne."></textarea>
+                    </div>
+                    <button class="button-pattern" onclick="salvar()">Salvar</button>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function salvar(){
+        alert("Cadastro concluído com sucesso!(Hipoteticamente)")
+    }
+</script>
