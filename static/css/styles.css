@@ -19,7 +19,8 @@
 
 .content-container{
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    border-color: #006B38FF;
+    border-color: #101820; 
+    border-radius: 10px;
     border-style: solid;
     border-width: 3px;
     padding: 2%;
@@ -37,7 +38,8 @@
 
 div#menu.content-container{
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    border-color: #006B38FF;
+    /* border-color: #006B38FF; */
+    border-radius: 13px;
     border-style: solid;
     border-width: 3px;
     padding: 2%;
@@ -161,4 +163,8 @@ div.field textarea{
     padding: 0% 25% 0% 25%;
     display: grid;
     margin: 2%;
+}
+
+textarea {
+    resize: none;
 }
